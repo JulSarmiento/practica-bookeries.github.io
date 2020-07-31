@@ -1,0 +1,116 @@
+/*Body and Generals*/
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 2% 2%;
+}
+
+
+/*Header*/
+
+.header, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #343838;
+}
+
+.header-title, .creddits {
+    font-family: 'Ranchers', cursive;
+    color: #00DFFC;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.header-title:hover {
+    font-size: 40px;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    margin-left: -40px;
+    margin-top: 0;
+    width: 280px;
+    justify-content: space-around;
+}
+
+.nav-bar-element {
+    color: #00DFFC;
+    font-family: 'PT Sans', sans-serif;
+    transition: 0.5s;
+}
+
+.nav-bar-element:hover {
+    font-size: 18px;
+}
+
+.nav-bar-element a {
+    text-decoration: none;
+    color: #00DFFC;
+}
+
+/*Main*/
+
+.our-books-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtitle {
+    color: #005F6B;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 1px;
+}
+
+.books-card-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.book-card {
+    padding: 2px 20px;
+    border-radius: 1em;
+    background-color: #008C9E;  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
+}
+
+.book-card h3, p {
+    font-family: 'PT Sans', sans-serif;
+    color: #343838;
+    letter-spacing: 1px;
+}
+
+.book-card img {
+    height: 180px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .nav-bar {
+        margin-top: 20px;
+    }
+
+    .subtitle {
+        align-self: flex-start;
+    }
+    
+    .book-card {
+        margin: 1%;
+    }
+}
