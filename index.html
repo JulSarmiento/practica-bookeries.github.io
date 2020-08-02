@@ -6,8 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Ranchers&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="Styles/style.css">
-        
-        <script src="Scripts/practica-de-clases.js" defer></script>
+
         <title>THE BOOKERIE | Julieth Sarmiento</title>
     </head>
 
@@ -24,6 +23,34 @@
         </header>
 
         <main  class="wrapper grid">
+
+            <aside class="new-book-container">
+
+                <h2 class="subtitle">Añadir un libro <i class="fab fa-bootstrap"></i></h2>
+    
+                <form action="" class="form">
+    
+                    <div class="form-element">
+                        <label for="name">Nombre del libro:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="author">Autor del libro:</label>
+                        <input type="text" name="author" id="author" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="year">Año de publicación:</label>
+                        <input type="number" name="year" id="year">
+                    </div>
+                    <div class="form-element">
+                        <label for="gender">Género del libro:</label>
+                        <input type="text" name="gender" id="gender">
+                    </div>
+                    <button type="submit" class="btn"><i class="fas fa-plus"></i></button>
+    
+                </form>
+    
+            </aside>
 
             <section class="our-books-container">
                 <h2 class="subtitle">Nuestros Libros <i class="fab fa-bootstrap"></i></h2>
@@ -75,33 +102,7 @@
                 </section>
             </section>
           
-            <aside class="new-book-container">
-
-                <h2 class="subtitle">Añadir un libro <i class="fab fa-bootstrap"></i></h2>
-    
-                <form action="" class="form">
-    
-                    <div class="form-element">
-                        <label for="name">Nombre del libro:</label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-                    <div class="form-element">
-                        <label for="author">Autor del libro:</label>
-                        <input type="text" name="author" id="author" required>
-                    </div>
-                    <div class="form-element">
-                        <label for="year">Año de publicación:</label>
-                        <input type="number" name="year" id="year">
-                    </div>
-                    <div class="form-element">
-                        <label for="gender">Género del libro:</label>
-                        <input type="text" name="gender" id="gender">
-                    </div>
-                    <button type="submit" class="btn"><i class="fas fa-plus"></i></button>
-    
-                </form>
-    
-            </aside>
+            
 
         </main>
 
@@ -110,6 +111,8 @@
         <footer class=footer>
             <p class="creddits">By: Julieth Sarmiento</p>
         </footer>
+
+        <script src="Scripts/class.js" ></script>
     
     </body>
 </html>
